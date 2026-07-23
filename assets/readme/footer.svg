@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" width="100%" role="img" aria-labelledby="footTitle footDesc">
+  <title id="footTitle">README 制作信息与 License</title>
+  <desc id="footDesc">README MADE WITH beautify-github-readme 签名,MIT License,作者 liem</desc>
+
+  <rect x="0" y="0" width="1200" height="100" rx="16" ry="16" fill="#F4F1EA"/>
+
+  <g id="footer-content" transform="translate(0 0)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif" text-rendering="geometricPrecision">
+
+    <g id="signature" transform="translate(48 38)">
+      <text x="0" y="0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" letter-spacing="2">README MADE WITH</text>
+      <text x="0" y="26" font-size="18" font-weight="700" fill="#1A1A1A">beautify-github-readme</text>
+      <line x1="0" y1="36" x2="180" y2="36" stroke="#B8860B" stroke-width="1.4"/>
+      <text x="0" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5B7553" letter-spacing="0.5">project-native SVG system</text>
+    </g>
+
+    <g id="meta" transform="translate(1152 38)">
+      <text x="0" y="0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="end" letter-spacing="1">LICENSE</text>
+      <text x="0" y="26" font-size="18" font-weight="700" fill="#1A1A1A" text-anchor="end">MIT</text>
+      <line x1="-60" y1="36" x2="0" y2="36" stroke="#5B7553" stroke-width="1.4"/>
+      <text x="0" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5B7553" text-anchor="end" letter-spacing="0.5">Copyright liem</text>
+    </g>
+
+    <g id="center-mark" transform="translate(600 50)">
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#5B7553" stroke-width="1"/>
+      <rect x="-5" y="-5" width="10" height="10" fill="#5B7553" fill-opacity="0.20" stroke="#5B7553" stroke-width="1"/>
+      <line x1="-14" y1="0" x2="-22" y2="0" stroke="#B8860B" stroke-width="1"/>
+      <line x1="14" y1="0" x2="22" y2="0" stroke="#B8860B" stroke-width="1"/>
+    </g>
+
+  </g>
+</svg>

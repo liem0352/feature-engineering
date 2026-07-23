@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" role="img" aria-labelledby="ttTitle ttDesc">
+  <title id="ttTitle">四类特征变换</title>
+  <desc id="ttDesc">数值变换、类别变换、缺失值处理、特征选择四类特征工程变换卡片,各附主要 scikit-learn API 与典型场景</desc>
+
+  <rect x="0" y="0" width="1200" height="320" rx="20" ry="20" fill="#F4F1EA"/>
+
+  <g id="tt-header" transform="translate(600 44)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif" text-rendering="geometricPrecision">
+    <text x="0" y="0" font-size="26" font-weight="700" fill="#1A1A1A" text-anchor="middle">四类特征变换</text>
+    <text x="0" y="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#5B7553" text-anchor="middle" letter-spacing="1">numeric / categorical / missing / selection</text>
+  </g>
+
+  <g id="tt-cards" transform="translate(48 100)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif" text-rendering="geometricPrecision">
+
+    <g id="card-numeric" transform="translate(0 0)">
+      <rect x="0" y="0" width="264" height="200" rx="10" ry="10" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      <rect x="0" y="0" width="264" height="6" rx="3" ry="3" fill="#5B7553"/>
+      <g transform="translate(108 30)">
+        <path d="M0 28 Q12 4 24 16 T48 16" stroke="#5B7553" stroke-width="1.6" fill="none"/>
+        <line x1="0" y1="28" x2="48" y2="28" stroke="#B8860B" stroke-width="1.6"/>
+        <line x1="24" y1="6" x2="24" y2="28" stroke="#8B8680" stroke-width="0.8" stroke-dasharray="2 2"/>
+      </g>
+      <text x="132" y="96" font-size="18" font-weight="700" fill="#1A1A1A" text-anchor="middle">数值变换</text>
+      <text x="132" y="120" font-size="12" fill="#5B7553" text-anchor="middle">缩放与离散化</text>
+      <line x1="40" y1="134" x2="224" y2="134" stroke="#8B8680" stroke-width="0.6" stroke-opacity="0.5"/>
+      <text x="132" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">StandardScaler</text>
+      <text x="132" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">MinMaxScaler</text>
+      <text x="132" y="192" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">KBinsDiscretizer</text>
+    </g>
+
+    <g id="card-categorical" transform="translate(280 0)">
+      <rect x="0" y="0" width="264" height="200" rx="10" ry="10" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      <rect x="0" y="0" width="264" height="6" rx="3" ry="3" fill="#5B7553"/>
+      <g transform="translate(92 30)">
+        <rect x="0" y="0" width="24" height="24" fill="none" stroke="#5B7553" stroke-width="1"/>
+        <text x="12" y="16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5B7553" text-anchor="middle">A</text>
+        <text x="40" y="16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8B8680" text-anchor="middle">to</text>
+        <rect x="56" y="0" width="24" height="24" fill="#5B7553" fill-opacity="0.20" stroke="#5B7553" stroke-width="1"/>
+        <text x="68" y="16" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#5B7553" text-anchor="middle">1</text>
+      </g>
+      <text x="132" y="96" font-size="18" font-weight="700" fill="#1A1A1A" text-anchor="middle">类别变换</text>
+      <text x="132" y="120" font-size="12" fill="#5B7553" text-anchor="middle">标签与独热编码</text>
+      <line x1="40" y1="134" x2="224" y2="134" stroke="#8B8680" stroke-width="0.6" stroke-opacity="0.5"/>
+      <text x="132" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">LabelEncoder</text>
+      <text x="132" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">OrdinalEncoder</text>
+      <text x="132" y="192" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">OneHotEncoder</text>
+    </g>
+
+    <g id="card-missing" transform="translate(560 0)">
+      <rect x="0" y="0" width="264" height="200" rx="10" ry="10" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      <rect x="0" y="0" width="264" height="6" rx="3" ry="3" fill="#5B7553"/>
+      <g transform="translate(92 28)">
+        <rect x="0" y="0" width="80" height="32" fill="none" stroke="#5B7553" stroke-width="1"/>
+        <rect x="0" y="0" width="20" height="16" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="20" y="0" width="20" height="16" fill="none" stroke="#5B7553" stroke-width="1" stroke-dasharray="2 2"/>
+        <rect x="40" y="0" width="20" height="16" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="60" y="0" width="20" height="16" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="0" y="16" width="20" height="16" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="20" y="16" width="20" height="16" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="40" y="16" width="20" height="16" fill="none" stroke="#5B7553" stroke-width="1" stroke-dasharray="2 2"/>
+        <rect x="60" y="16" width="20" height="16" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      </g>
+      <text x="132" y="96" font-size="18" font-weight="700" fill="#1A1A1A" text-anchor="middle">缺失值处理</text>
+      <text x="132" y="120" font-size="12" fill="#5B7553" text-anchor="middle">检测与插补</text>
+      <line x1="40" y1="134" x2="224" y2="134" stroke="#8B8680" stroke-width="0.6" stroke-opacity="0.5"/>
+      <text x="132" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">isnull / dropna</text>
+      <text x="132" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">SimpleImputer</text>
+      <text x="132" y="192" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">KNNImputer</text>
+    </g>
+
+    <g id="card-selection" transform="translate(840 0)">
+      <rect x="0" y="0" width="264" height="200" rx="10" ry="10" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      <rect x="0" y="0" width="264" height="6" rx="3" ry="3" fill="#5B7553"/>
+      <g transform="translate(100 30)">
+        <rect x="0" y="0" width="22" height="22" fill="#5B7553"/>
+        <path d="M5 11 L9 15 L17 6" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+        <rect x="30" y="0" width="22" height="22" fill="none" stroke="#8B8680" stroke-width="1"/>
+        <line x1="36" y1="11" x2="46" y2="11" stroke="#8B8680" stroke-width="1"/>
+        <rect x="60" y="0" width="22" height="22" fill="none" stroke="#8B8680" stroke-width="1"/>
+        <line x1="66" y1="11" x2="76" y2="11" stroke="#8B8680" stroke-width="1"/>
+      </g>
+      <text x="132" y="96" font-size="18" font-weight="700" fill="#1A1A1A" text-anchor="middle">特征选择</text>
+      <text x="132" y="120" font-size="12" fill="#5B7553" text-anchor="middle">过滤冗余特征</text>
+      <line x1="40" y1="134" x2="224" y2="134" stroke="#8B8680" stroke-width="0.6" stroke-opacity="0.5"/>
+      <text x="132" y="156" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">VarianceThreshold</text>
+      <text x="132" y="174" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">SelectKBest</text>
+      <text x="132" y="192" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">chi2</text>
+    </g>
+
+  </g>
+
+  <text x="600" y="304" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8B8680" text-anchor="middle" letter-spacing="1">每类变换对应一个独立脚本,围绕鸢尾花与 Statlog Vehicle 数据集</text>
+</svg>

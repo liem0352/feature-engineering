@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" role="img" aria-labelledby="pipeTitle pipeDesc">
+  <title id="pipeTitle">特征工程主流水线</title>
+  <desc id="pipeDesc">六阶段特征工程流水线:原始数据,缺失值处理,编码,缩放,特征选择,机器学习模型</desc>
+
+  <defs>
+    <marker id="pipeArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8B8680"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" rx="20" ry="20" fill="#F4F1EA"/>
+
+  <g id="pipe-title" transform="translate(600 48)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif" text-rendering="geometricPrecision">
+    <text x="0" y="0" font-size="28" font-weight="700" fill="#1A1A1A" text-anchor="middle">特征工程主流水线</text>
+    <text x="0" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#5B7553" text-anchor="middle" letter-spacing="1">raw data / impute / encode / scale / select / model</text>
+  </g>
+
+  <g id="pipeline" transform="translate(68 130)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif" text-rendering="geometricPrecision">
+
+    <g id="stage-1" transform="translate(0 0)">
+      <rect x="0" y="0" width="144" height="180" rx="8" ry="8" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      <text x="72" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8B8680" text-anchor="middle" letter-spacing="1">01</text>
+      <g transform="translate(36 38)" stroke="#5B7553" stroke-width="1" fill="#FFFFFF">
+        <rect x="0" y="0" width="18" height="14"/>
+        <rect x="18" y="0" width="18" height="14"/>
+        <rect x="36" y="0" width="18" height="14"/>
+        <rect x="0" y="14" width="18" height="14"/>
+        <rect x="18" y="14" width="18" height="14"/>
+        <rect x="36" y="14" width="18" height="14"/>
+        <rect x="0" y="28" width="18" height="14"/>
+        <rect x="18" y="28" width="18" height="14"/>
+        <rect x="36" y="28" width="18" height="14"/>
+      </g>
+      <text x="72" y="108" font-size="17" font-weight="700" fill="#1A1A1A" text-anchor="middle">原始数据</text>
+      <text x="72" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">DataFrame</text>
+      <text x="72" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">iris / vehicle</text>
+    </g>
+
+    <g transform="translate(152 86)">
+      <line x1="0" y1="0" x2="32" y2="0" stroke="#8B8680" stroke-width="1.4" marker-end="url(#pipeArrow)"/>
+    </g>
+
+    <g id="stage-2" transform="translate(192 0)">
+      <rect x="0" y="0" width="144" height="180" rx="8" ry="8" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      <text x="72" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8B8680" text-anchor="middle" letter-spacing="1">02</text>
+      <g transform="translate(36 38)">
+        <rect x="0" y="0" width="72" height="42" fill="none" stroke="#5B7553" stroke-width="1"/>
+        <rect x="0" y="0" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="18" y="0" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="36" y="0" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="54" y="0" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="0" y="14" width="18" height="14" fill="none" stroke="#5B7553" stroke-width="1" stroke-dasharray="2 2"/>
+        <rect x="18" y="14" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="36" y="14" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="54" y="14" width="18" height="14" fill="none" stroke="#5B7553" stroke-width="1" stroke-dasharray="2 2"/>
+        <rect x="0" y="28" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="18" y="28" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="36" y="28" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+        <rect x="54" y="28" width="18" height="14" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      </g>
+      <text x="72" y="108" font-size="17" font-weight="700" fill="#1A1A1A" text-anchor="middle">缺失值处理</text>
+      <text x="72" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">fillna</text>
+      <text x="72" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">SimpleImputer</text>
+    </g>
+
+    <g transform="translate(344 86)">
+      <line x1="0" y1="0" x2="32" y2="0" stroke="#8B8680" stroke-width="1.4" marker-end="url(#pipeArrow)"/>
+    </g>
+
+    <g id="stage-3" transform="translate(384 0)">
+      <rect x="0" y="0" width="144" height="180" rx="8" ry="8" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      <text x="72" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8B8680" text-anchor="middle" letter-spacing="1">03</text>
+      <g transform="translate(36 44)">
+        <rect x="0" y="0" width="32" height="32" fill="none" stroke="#5B7553" stroke-width="1"/>
+        <text x="16" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#5B7553" text-anchor="middle">A</text>
+        <text x="44" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8B8680" text-anchor="middle">to</text>
+        <rect x="56" y="0" width="32" height="32" fill="#5B7553" fill-opacity="0.18" stroke="#5B7553" stroke-width="1"/>
+        <text x="72" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#5B7553" text-anchor="middle">1</text>
+      </g>
+      <text x="72" y="108" font-size="17" font-weight="700" fill="#1A1A1A" text-anchor="middle">编码</text>
+      <text x="72" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">LabelEncoder</text>
+      <text x="72" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">OneHotEncoder</text>
+    </g>
+
+    <g transform="translate(536 86)">
+      <line x1="0" y1="0" x2="32" y2="0" stroke="#8B8680" stroke-width="1.4" marker-end="url(#pipeArrow)"/>
+    </g>
+
+    <g id="stage-4" transform="translate(576 0)">
+      <rect x="0" y="0" width="144" height="180" rx="8" ry="8" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      <text x="72" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8B8680" text-anchor="middle" letter-spacing="1">04</text>
+      <g transform="translate(36 44)">
+        <path d="M0 32 Q12 4 24 18 T72 18" stroke="#5B7553" stroke-width="1.5" fill="none"/>
+        <line x1="0" y1="32" x2="72" y2="32" stroke="#B8860B" stroke-width="1.5"/>
+        <line x1="36" y1="6" x2="36" y2="32" stroke="#8B8680" stroke-width="0.8" stroke-dasharray="2 2"/>
+      </g>
+      <text x="72" y="108" font-size="17" font-weight="700" fill="#1A1A1A" text-anchor="middle">缩放</text>
+      <text x="72" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">StandardScaler</text>
+      <text x="72" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">MinMaxScaler</text>
+    </g>
+
+    <g transform="translate(728 86)">
+      <line x1="0" y1="0" x2="32" y2="0" stroke="#8B8680" stroke-width="1.4" marker-end="url(#pipeArrow)"/>
+    </g>
+
+    <g id="stage-5" transform="translate(768 0)">
+      <rect x="0" y="0" width="144" height="180" rx="8" ry="8" fill="#FFFFFF" stroke="#5B7553" stroke-width="1"/>
+      <text x="72" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#8B8680" text-anchor="middle" letter-spacing="1">05</text>
+      <g transform="translate(36 42)">
+        <rect x="0" y="0" width="22" height="22" fill="#5B7553"/>
+        <path d="M5 11 L9 15 L17 6" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+        <rect x="28" y="0" width="22" height="22" fill="none" stroke="#8B8680" stroke-width="1"/>
+        <line x1="34" y1="11" x2="44" y2="11" stroke="#8B8680" stroke-width="1"/>
+        <rect x="56" y="0" width="22" height="22" fill="none" stroke="#8B8680" stroke-width="1"/>
+        <line x1="62" y1="11" x2="72" y2="11" stroke="#8B8680" stroke-width="1"/>
+      </g>
+      <text x="72" y="108" font-size="17" font-weight="700" fill="#1A1A1A" text-anchor="middle">特征选择</text>
+      <text x="72" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">VarianceThreshold</text>
+      <text x="72" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">SelectKBest</text>
+    </g>
+
+    <g transform="translate(920 86)">
+      <line x1="0" y1="0" x2="32" y2="0" stroke="#8B8680" stroke-width="1.4" marker-end="url(#pipeArrow)"/>
+    </g>
+
+    <g id="stage-6" transform="translate(960 0)">
+      <rect x="0" y="0" width="144" height="180" rx="8" ry="8" fill="#B8860B" fill-opacity="0.10" stroke="#B8860B" stroke-width="1.2"/>
+      <text x="72" y="22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#B8860B" text-anchor="middle" letter-spacing="1">06</text>
+      <g transform="translate(36 40)">
+        <circle cx="36" cy="18" r="18" fill="none" stroke="#B8860B" stroke-width="1.4"/>
+        <circle cx="36" cy="18" r="11" fill="none" stroke="#B8860B" stroke-width="1.2"/>
+        <circle cx="36" cy="18" r="4" fill="#B8860B"/>
+      </g>
+      <text x="72" y="108" font-size="17" font-weight="700" fill="#1A1A1A" text-anchor="middle">模型</text>
+      <text x="72" y="130" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">KNN / SVM</text>
+      <text x="72" y="148" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">KMeans / PCA</text>
+    </g>
+
+  </g>
+
+  <text x="600" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#8B8680" text-anchor="middle" letter-spacing="1">每个脚本只做一件事,数据集小而真实,可直接看到变换前后对比</text>
+</svg>
