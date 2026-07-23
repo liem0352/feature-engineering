@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 140" width="100%" role="img" aria-labelledby="topicsTitle topicsDesc">
+  <title id="topicsTitle">特征工程五大主题</title>
+  <desc id="topicsDesc">编码、缩放、选择、离散化、缺失值五个特征工程主题卡片,各附主要 scikit-learn API</desc>
+
+  <rect x="0" y="0" width="1200" height="140" rx="16" ry="16" fill="#F4F1EA"/>
+
+  <g id="topics" transform="translate(48 20)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif" text-rendering="geometricPrecision">
+
+    <g id="topic-encode" transform="translate(0 0)">
+      <rect x="0" y="0" width="208" height="100" rx="6" ry="6" fill="none" stroke="#5B7553" stroke-width="1"/>
+      <g stroke="#5B7553" stroke-width="1" fill="#FFFFFF">
+        <rect x="89" y="24" width="12" height="12"/>
+      </g>
+      <text x="95" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5B7553" text-anchor="middle">A</text>
+      <text x="104" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#8B8680" text-anchor="middle">→</text>
+      <rect x="108" y="24" width="12" height="12" fill="#5B7553" fill-opacity="0.18" stroke="#5B7553" stroke-width="1"/>
+      <text x="114" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" fill="#5B7553" text-anchor="middle">1</text>
+      <text x="104" y="68" font-size="20" font-weight="700" fill="#1A1A1A" text-anchor="middle">编码</text>
+      <text x="104" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">LabelEncoder · OneHot</text>
+    </g>
+
+    <g id="topic-scale" transform="translate(224 0)">
+      <rect x="0" y="0" width="208" height="100" rx="6" ry="6" fill="none" stroke="#5B7553" stroke-width="1"/>
+      <path d="M87 36 Q93 22 99 36 T111 36" stroke="#5B7553" stroke-width="1.5" fill="none"/>
+      <line x1="87" y1="44" x2="121" y2="44" stroke="#B8860B" stroke-width="1.5"/>
+      <text x="104" y="68" font-size="20" font-weight="700" fill="#1A1A1A" text-anchor="middle">缩放</text>
+      <text x="104" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">Standard · MinMax</text>
+    </g>
+
+    <g id="topic-select" transform="translate(448 0)">
+      <rect x="0" y="0" width="208" height="100" rx="6" ry="6" fill="none" stroke="#5B7553" stroke-width="1"/>
+      <rect x="89" y="22" width="9" height="9" fill="#5B7553"/>
+      <path d="M91 27 L93 29 L97 24" stroke="#FFFFFF" stroke-width="1.3" fill="none"/>
+      <rect x="101" y="22" width="9" height="9" fill="none" stroke="#8B8680" stroke-width="1"/>
+      <rect x="113" y="22" width="9" height="9" fill="none" stroke="#8B8680" stroke-width="1"/>
+      <text x="104" y="68" font-size="20" font-weight="700" fill="#1A1A1A" text-anchor="middle">选择</text>
+      <text x="104" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">Variance · chi2</text>
+    </g>
+
+    <g id="topic-bin" transform="translate(672 0)">
+      <rect x="0" y="0" width="208" height="100" rx="6" ry="6" fill="none" stroke="#5B7553" stroke-width="1"/>
+      <path d="M87 38 L95 38 L95 28 L103 28 L103 42 L111 42 L111 32 L121 32" stroke="#B8860B" stroke-width="1.5" fill="none"/>
+      <text x="104" y="68" font-size="20" font-weight="700" fill="#1A1A1A" text-anchor="middle">离散化</text>
+      <text x="104" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">KBinsDiscretizer</text>
+    </g>
+
+    <g id="topic-impute" transform="translate(896 0)">
+      <rect x="0" y="0" width="208" height="100" rx="6" ry="6" fill="none" stroke="#5B7553" stroke-width="1"/>
+      <rect x="89" y="22" width="30" height="16" fill="none" stroke="#5B7553" stroke-width="1"/>
+      <line x1="93" y1="30" x2="115" y2="30" stroke="#8B8680" stroke-width="1.3" stroke-dasharray="3 3"/>
+      <text x="104" y="68" font-size="20" font-weight="700" fill="#1A1A1A" text-anchor="middle">缺失值</text>
+      <text x="104" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8B8680" text-anchor="middle">Simple · KNN</text>
+    </g>
+
+  </g>
+</svg>
